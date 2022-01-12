@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "pepe",
+        "mail": "pepe@mail.com",
+        "rol": "admin"
+    },
+    {
+        "id": 2,
+        "name": "luca",
+        "mail": "luca@mail.com",
+        "rol": "user"
+    },
+    {
+        "id": 3,
+        "name": "maria",
+        "mail": "maria@mail.com",
+        "rol": "programadora"
+    }
+]
