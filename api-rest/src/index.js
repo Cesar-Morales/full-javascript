@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const morgan = require('morgan');
 
-const PORT = 3030;
+const PORT = 3000;
 
 // setting
 app.set('port', process.env.PORT || PORT);
