@@ -37,10 +37,13 @@
 ## Notas sueltas
 
 - una rest api por convencion se la ubica en /api/{nombre que quieras que este}. Tambien es normal verlo como https://www.api.urldelapagina. La primera mencionada es la que usaré aquí.
+- la api esta en el puerto 3000 y la app esta en el puerto 5000
 
 ### TODO
 
 - [x] Documentar
+- [x] CRUD backend
+- [ ] CRUD frontend
 - [ ] Hacer las validaciones con express-validator
 - [ ] Agregar base de datos
 - [ ] ApiRest terminada
