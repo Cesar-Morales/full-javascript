@@ -26,13 +26,17 @@
 
 ## Configuro package.json
 
-- agrego "start": "node src/index.js" en el sector script para correr la aplicacion con:
+- agrego "start": "node api/index.js" en el sector script para correr la api con:
 
         npm run start
 
-- agrego "dev": "nodemon src/index.js" en el sector script para correr la aplicacion con refresco automatico:
+- agrego "dev": "nodemon api/index.js" en el sector script para correr la api con refresco automatico:
 
         npm run dev
+
+- agrego "app": "nodemon app/index.js" en el sector script para correr la aplicacion con refresco automatico:
+
+        npm run app
 
 ## Notas sueltas
 
