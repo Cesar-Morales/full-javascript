@@ -22,3 +22,7 @@ Diferentes formas
 - <React.Fragment> .. <React.Fragment>
 - import {Fragment} from 'react'
 - <Fragment.> ... </Fragment.> (El punto es porque sino md no lo toma)
+
+### Librerias
+
+- uuid para aleatoriedad de ids
