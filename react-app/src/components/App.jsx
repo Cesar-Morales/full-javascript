@@ -9,7 +9,7 @@ export function App() {
         {id: uuidv4(), nombre: 'Hacer la limpieza'},
         {id: uuidv4(), nombre: 'Hacer la cama'},
     ]);
-    
+
     const inputRef = useRef();
 
     const handleClickTodoAdd = () => {
@@ -19,8 +19,8 @@ export function App() {
         setTodos( prevTodos => { 
             return [...prevTodos, {id: uuidv4(), nombre: task}]
         });
+        inputRef.current.value = '';
     };
-
 
     return (
         <Fragment>

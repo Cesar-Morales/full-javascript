@@ -4,6 +4,6 @@ export function TodoItem( {todo} ) {
     const {nombre, id} = todo;
     return (
         <li>
-            {nombre} ({id})
+            {nombre} 
         </li>
 )};
