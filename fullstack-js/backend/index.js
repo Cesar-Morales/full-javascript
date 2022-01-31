@@ -1,7 +1,10 @@
+process.env.NODE_ENV = 'development' ? require('dotenv').config() : null; // si esta en desarrollo usa dotenv, si no nada
+
 const express = require('express');
 const morgan = require('morgan');
 const multer = require('multer');
 const path = require('path'); 
+
 
 // Initialize the app
 const app = express();
