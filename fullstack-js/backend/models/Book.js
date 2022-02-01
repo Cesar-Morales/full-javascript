@@ -8,4 +8,4 @@ const BookSchema = new Schema({
     createdAt: {type: Date, default: Date.now}
 });
 
-model.exports = model('Book', BookSchema);
+module.exports = model('Book', BookSchema);

@@ -1,4 +1,4 @@
-process.env.NODE_ENV = 'development' ? require('dotenv').config() : null; // si esta en desarrollo usa dotenv, si no nada
+process.env.NODE_ENV === 'development' ? require('dotenv').config() : null; // si esta en desarrollo usa dotenv, si no nada
 
 const express = require('express');
 const morgan = require('morgan');
@@ -21,7 +21,7 @@ const storage = multer.diskStorage({
         cb(null, new Date().getTime() + path.extname(file.originalname));
     }
 }); 
-app.use(multer({storage}).single()); // single() para que solo se pueda subir un archivo a la vez
+app.use(multer({storage}).single('image')); // single() para que solo se pueda subir un archivo a la vez
 app.use(express.urlencoded({extended: false}));  // Puedo entender los datos de los formularios que me envien
 app.use(express.json()); //  Puedo entender las peticiones ajax que me envien al servidor
 

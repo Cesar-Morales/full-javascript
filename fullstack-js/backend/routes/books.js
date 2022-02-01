@@ -1,8 +1,11 @@
-const {Router} = require('express') //Solo requiro routers porque no quiero levantar otro sv
+const { Router } = require('express'); //Solo requiro routers porque no quiero levantar otro sv
 const router = Router();    
 
-router.get('/', (req, res) => {
-    res.json({text :'Hello World'});
+const Book = require('../models/Book');
+
+router.get('/', async (req, res) => {
+    const books =  await Book.find();
+    res.json(books); 
 });
 
 module.exports = router;
