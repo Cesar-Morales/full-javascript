@@ -1,1 +1,1 @@
-{"version":3,"file":"css/bundle.css","mappings":"AAAA;EACE,iBAAiB;EACjB,YAAY;AACd","sources":["webpack://fullstack-js/./frontend/styles/styles.css"],"sourcesContent":["body {\n  background: green;\n  color: white;\n}\n"],"names":[],"sourceRoot":""}
+{"version":3,"file":"css/bundle.css","mappings":"AAAA;EACE,iBAAiB;EACjB,YAAY;AACd","sources":["webpack://fullstack-js/./frontend/styles/app.css"],"sourcesContent":["body {\n  background: green;\n  color: white;\n}\n"],"names":[],"sourceRoot":""}
