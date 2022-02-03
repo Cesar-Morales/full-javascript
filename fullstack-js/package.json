@@ -7,7 +7,7 @@
     "dev": "cross-env NODE_ENV=development nodemon backend/index.js --ignore frontend",
     "start": "cross-env NODE_ENV=production node backend/index.js",
     "build": "cross-env NODE_ENV=production webpack",
-    "server-dev": "webpack-dev-server" 
+    "server-dev": "webpack-dev-server"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,7 @@
     "cross-env": "^7.0.3",
     "dotenv": "^15.0.0",
     "express": "^4.17.2",
+    "form-data": "^4.0.0",
     "fs-extra": "^10.0.0",
     "mongoose": "^6.1.8",
     "morgan": "^1.10.0",
