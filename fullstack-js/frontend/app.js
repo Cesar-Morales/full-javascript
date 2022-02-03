@@ -1,13 +1,15 @@
 require('./styles/app.css')
 //import './styles/app.css' //ecmascript 6
-//const BookService = require('./services/BookService')
-import BookService from './services/BookService'; //ecmascript 6
+import UI from './UI'
+
+document.addEventListener('DOMContentLoaded', () => {
+    const ui = new UI();
+    ui.renderBooks();
+})
 
 document.getElementById('book-form')
         .addEventListener('submit', function(e){
             e.preventDefault();
-            var form = new FormData(this);
-            
 
             const title = document.getElementById('title').value;
             const author = document.getElementById('author').value;
@@ -20,8 +22,8 @@ document.getElementById('book-form')
             formData.append('isbn', isbn);
             formData.append('image', image[0]);
             
-            const bookService = new BookService();
-            bookService.postBook(formData);
-            
+            const ui = new UI();
+            ui.addANewBook(formData);
+
         });
 
