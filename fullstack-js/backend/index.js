@@ -4,7 +4,7 @@ const express = require('express');
 const morgan = require('morgan');
 const multer = require('multer');
 const path = require('path'); 
-
+const cors = require('cors');
 
 // Initialize the app
 const app = express();
@@ -24,6 +24,7 @@ const storage = multer.diskStorage({
 app.use(multer({storage}).single('image')); // single() para que solo se pueda subir un archivo a la vez
 app.use(express.urlencoded({extended: false}));  // Puedo entender los datos de los formularios que me envien
 app.use(express.json()); //  Puedo entender las peticiones ajax que me envien al servidor
+app.use(cors());
 
 // Routes
 app.use('/api/books',require('./routes/books'));

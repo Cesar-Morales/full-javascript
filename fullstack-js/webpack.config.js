@@ -5,7 +5,7 @@ const statusEnv = process.env.NODE_ENV !== 'production'
 
 module.exports = {
 
-    mode: 'production',
+    mode: 'development',
     
     entry: './frontend/app.js',
     
