@@ -1,7 +1,8 @@
 const { Router } = require('express'); //Solo requiro routers porque no quiero levantar otro sv
 const router = Router();    
-
+const { unlink } = require('fs-extra');
 const Book = require('../models/Book');
+const path = require('path');
 
 router.get('/', async (req, res) => {
     const books =  await Book.find();
@@ -20,6 +21,7 @@ router.post('/', async (req, res) => {
 router.delete('/:id', async (req, res) => {
     const _id = req.params.id;
     const bookdeleted = await Book.findByIdAndDelete({_id});
+    unlink(path.resolve('./backend/public'+bookdeleted.imagePath));
     res.json({  message: "Book deleted", 
                 Book : {
                     title: bookdeleted.title,

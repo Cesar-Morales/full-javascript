@@ -22,6 +22,7 @@ class BookService {
     }
 
     deleteBook(id) {
+        console.log(id);
         return fetch(`${this.URI}/${id}`, {
             method: 'DELETE',
             headers: {
